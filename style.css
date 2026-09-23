@@ -1,43 +1,43 @@
-style.css
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "poppins", sans-serif;  
-}
+.navbar{
+    background-color: #b093f3;
 
-body {
+
+    width: 100px;
+    height: 100px;
     display: flex;
     justify-content: center;
+    justify-items: center;
+    margin-top: 200px;
+    margin-left: 200px;
     align-items: center;
-    min-height: 100vh;
-    background: blue;
+    color: rgb(36, 9, 24);
+    animation-duration: 5s;
+    animation-name: spin;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction:alternate ;
+    animation-fill-mode: forwards;
+}   
+.navbar:hover{
+    background-color: blue;
+    animation-play-state: paused;
 }
+@keyframes spin{
+    0%{
+        background-color: bisque;
+    }
+    50%{
+        scale: 2;
+        background-color: #9bf393;
+    }
 
-.wrapper {
-    width: 420px;
-    background: purple;
-    color: #fff;
+   100%{
+    transform: rotate(360deg);
+    border-radius: 50%;
+    scale: 2;
+   } 
+
 }
-
-.wrapper h1 {
-    font-size: 36px;
-    text-align: center;
-}
-
-.wrapper  .input-box{
-    width: 100%;
-    height:50px;
-    background: salmon;
-    margin:30px 0;
-}
-
-.input-box {
-    width: 100%;
-    height:100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border:2px solid rgba(255,255,255, .2);
-    border-radius: 40px;
+body{
+    background-color:pink;
 }
